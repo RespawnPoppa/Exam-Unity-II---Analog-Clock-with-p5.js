@@ -35,14 +35,22 @@ function draw() {
 
   //  Initial setting  hora La Paz
   drawClock(500, height / 2, hrLaPaz, minLaPaz, secLaPaz);
+  textSize(20)
+  fill(255);
+  text('La Paz', 468, height / 2 + 200);
+ 
 
   //   Initial setting hora Ciudad de México
   let hrCDMX = (hrLaPaz +1  + 24) % 24;
   drawClock(850, height / 2, hrCDMX, minLaPaz, secLaPaz);
+  fill(255);
+  text('CDMX',815 , height / 2 + 200);
 
+  
   //   Initial setting  hora Barcelona
   let hrBarcelona = (hrLaPaz + 8  + 24) % 24;
   drawClock(1200, height / 2, hrBarcelona, minLaPaz, secLaPaz);
+  text('Barcelona',1156 , height / 2 + 200);
 
  
   let osc = ap * sin(sp * secLaPaz);
